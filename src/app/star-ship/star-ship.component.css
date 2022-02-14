@@ -1,0 +1,89 @@
+#contShip{
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#fondo{
+    padding-top: 5px;
+    background-color: #100c0c;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#con{
+    width: 70%;
+}
+
+*{
+    font-family: 'Exo', sans-serif;
+}
+
+#tDiv{
+    text-transform: uppercase;
+}
+
+#tDiv1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.sSSpace{
+    color:silver;
+    padding: 10px;
+    margin: 0;
+}
+
+.white{
+    color: silver;
+}
+
+#desc{
+    margin-bottom: 20px;
+}
+
+#bDesc{
+    display: flex;
+    flex-direction: row;
+}
+
+#rigth{
+    margin-left: 300px;
+}
+
+.group p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#Volver{
+    color: white;
+    background-color: #292929;
+    border-radius: 5px;
+    width: 65px;
+    padding: 10px;
+    height: 40px;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+#Volver:hover{
+    cursor: pointer;
+    background-color: #1c1c1c;
+}
+
+#ordImg{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+#con2{
+    margin-left: 100px;
+    width: 60%;
+}

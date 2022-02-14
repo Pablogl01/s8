@@ -1,0 +1,32 @@
+<div id="fondo">
+    <div id="con" class="container" infiniteScroll [infiniteScrollDistance]="2"  (scrolled)="callApi.onScroll()">
+        <div *ngFor="let ship of callApi.s">
+            <div id="contShip" *ngIf="!showShipInfoBool" (click)="showShipInfo(ship.url,ship.name,ship.films[0],ship.model,ship.manufacturer,ship.cost_in_credits,ship.length,ship.max_atmosphering_speed,ship.crew)">
+                <p class="sSSpace" id="tDiv">{{ship.name}}</p>
+                <p class="sSSpace">{{ship.model}}</p>
+            </div>
+        </div>
+    </div>
+    <div id="con2" *ngIf="showShipInfoBool">
+        <div id="ordImg">
+            <img [src]='url' onError="this.src='https://i.pinimg.com/originals/4d/0b/0a/4d0b0a9ed71e116064be18caed964670.jpg'"/>
+            <p id="Volver" (click)="backShipList()">Volver</p>
+        </div>
+        <div>
+            <p id="tDiv1">{{shipName}}</p>
+            <p class="white" id="desc">{{callApi.film}}</p>
+            <div id="bDesc">
+                <div class="group">
+                    <p class="white">Model: {{model}}</p>
+                    <p class="white">Cost: {{shipCost}}</p>
+                    <p class="white">Atmospheric Speed: {{atmos}}</p>
+                </div>
+                <div id="rigth" class="group">
+                    <p class="white">Manufacturer Kua: {{manufacturer}}</p>
+                    <p class="white">Length: {{length}}</p>
+                    <p class="white">Crew: {{crew}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

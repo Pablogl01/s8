@@ -1,0 +1,15 @@
+p{
+    text-transform: uppercase;
+    color: white;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    font-size: 50px;
+}
+
+div{
+    height: 75.4vh;
+    background-color: #100c0c;
+    display: flex;
+    justify-content: center;
+}
+

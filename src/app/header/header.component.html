@@ -1,0 +1,48 @@
+<div id="head"> 
+    <img src="../../assets/d.png">
+    <div id="buttons">
+        <a (click)="openModal(contenido)">LOG IN</a>
+        <span>//</span>
+        <a>SIGN UP</a>
+    </div>
+</div>
+
+<ng-template #contenido let-modal>
+    <div class="modal-header">
+        <img src="../../assets/Screenshot_4.png"> 
+        <p class="close" aria-label="close" id="x" (click)="modal.dismiss()">X</p>
+    </div>
+    <div class="modal-body">
+        <p id="sign">SIGN IN</p>
+        <input id="nameS" type="text" placeholder="Username or Email Address">
+        <input id="passS" type="password" placeholder="Password">
+    </div>
+    <div class="modal-footer">
+        <p id="in" (click)="singIn()">Sign In</p>
+        <p id="create" (click)="modal.close(); openModal(registro)">Create an Account</p>
+    </div>
+</ng-template>
+
+<ng-template #registro let-modal>
+    <div class="modal-header">
+        <img src="../../assets/Screenshot_4.png"> 
+        <p class="close" aria-label="close" id="x" (click)="modal.dismiss()">X</p>
+    </div>
+    <div class="modal-body">
+        <p id="sign">CREATE YOUR ACCOUNT</p>
+        <input id="nameC" type="text" placeholder="First Name">
+        <input id="lastNameC" type="text" placeholder="Last Name">
+        <input id="email" type="email" placeholder="Email">
+        <input id="passC" type="password" placeholder="Password">
+    </div>
+    <div class="modal-footer">
+        <p id="in" (click)="createAcc()">Create account</p>
+        <p id="create" (click)="modal.close(); openModal(contenido)">Sign In</p>
+    </div>
+</ng-template>
+
+
+<div id="nav">
+    <p class="navB" id="home" (click)="pageSelected('h')"routerLink="/">HOME</p>
+    <p class="navB" id="ships" (click)="pageSelected('s')"routerLink="/StarShip">STARSHIPS</p>
+</div>

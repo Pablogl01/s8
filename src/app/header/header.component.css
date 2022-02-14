@@ -1,0 +1,138 @@
+#head{
+    background-color: #100c0c;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0px 25px 0px;
+}
+
+#buttons{
+    margin-right: 20px;
+    order: 2;
+    position: absolute;
+    margin-left: 85vw;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: grey solid 1px;
+    border-bottom: grey solid 1px;
+    width: 100%;
+    background-color: #100c0c;
+}
+
+.navB{
+    background-color: #100c0c;
+    font-size: 15px;
+    color: silver;
+    padding: 10px 15px;
+    border-left: grey solid 1px;
+    border-right: grey solid 1px;
+    margin: 0;
+}
+
+.navB:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #212121;
+    font-weight:500;
+}
+
+a{
+    color: white !important;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+span{
+    color: grey;
+}
+
+img{
+    width: 300px;
+}
+
+.selected{
+    border-bottom: #1453a3 solid 2px;
+}
+
+.modal-content{
+    border-radius: 5px !important;
+}
+
+.modal-header, .modal-body, .modal-footer{ 
+    background-color: #181818 !important;
+    border: 0;
+}
+
+#sign{
+    color: #EAD700 !important;
+    text-align: center !important;
+    font-size: 30px !important;
+    margin-bottom: 20px !important;
+}
+
+input{
+    border-radius: 5px !important;
+    padding: 5px !important;
+    margin-bottom: 10px !important;
+    
+}
+
+input:focus{
+    background-color: #484848 !important;
+    border: 2px solid #EAD700 !important;
+    border-radius: 5px !important;
+    outline: none !important;
+    padding: 5px !important;
+    caret-color: #EAD700 !important;
+}
+
+
+.modal-body{
+    display: flex !important;
+    flex-direction: column;
+}
+
+#in{
+    width: 100% !important;
+    background-color: #484848 !important;
+    color: white !important;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    
+}
+
+#in:hover{
+    cursor: pointer;
+    background-color: #3f6dac !important;
+}
+
+#x{
+    text-shadow: none;
+    color: #484848;
+    cursor: pointer;
+}
+
+#create{
+    width: 100% !important;
+    color: #EAD700 !important;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+}
+
+#create:hover{
+    border: #EAD700 solid 1px;
+}
